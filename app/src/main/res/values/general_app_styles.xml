@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ActiveIndicator" parent="ShapeAppearance.Material3.NavigationBarView.ActiveIndicator">
+        <item name="backgroundTint">@color/transparent</item>
+    </style>
+
+</resources>

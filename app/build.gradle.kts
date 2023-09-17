@@ -3,9 +3,14 @@ plugins {
     id("org.jetbrains.kotlin.android")
     // for navigation safe args
     id("androidx.navigation.safeargs")
-    // KSP Plugins
-    id("com.google.devtools.ksp")
+    /*// KSP Plugins
+    id("com.google.devtools.ksp")*/
+    // Kapt
+    id("org.jetbrains.kotlin.kapt")
 }
+/*ksp {
+    arg("verbose", "true")
+}*/
 
 android {
     namespace = "dev.training.spotify_design"
@@ -36,12 +41,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_20
-        targetCompatibility = JavaVersion.VERSION_20
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
 
     kotlinOptions {
-        jvmTarget = "20"
+        jvmTarget = "17"
     }
 }
 
@@ -65,12 +70,13 @@ dependencies {
     implementation("com.intuit.ssp:ssp-android:1.1.0")
 
     // Navigation Component
+    implementation("androidx.navigation:navigation-common-ktx:2.7.2")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
-    ksp("com.github.bumptech.glide:compiler:4.16.0")
+    kapt("com.github.bumptech.glide:compiler:4.16.0")
 
     // Splash API
     implementation("androidx.core:core-splashscreen:1.0.1")

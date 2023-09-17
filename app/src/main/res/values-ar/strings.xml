@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Spotify-Design</string>
+    <string name="home">المنزل</string>
+    <string name="search">البحث</string>
+    <string name="your_library">مكتبك</string>
+    <string name="spotify_premium">الاشتراك المميز</string>
+</resources>

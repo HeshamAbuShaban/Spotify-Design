@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Spotify-Design</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="your_library">Your Library</string>
+    <string name="spotify_premium">Spotify Premium</string>
+</resources>

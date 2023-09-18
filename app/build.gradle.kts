@@ -76,9 +76,12 @@ dependencies {
 
     // Glide
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    //noinspection KaptUsageInsteadOfKsp
     kapt("com.github.bumptech.glide:compiler:4.16.0")
 
     // Splash API
     implementation("androidx.core:core-splashscreen:1.0.1")
 
+    // Shimmer PlaceHolders for the Data that comes from the server
+    implementation("com.facebook.shimmer:shimmer:0.5.0")
 }

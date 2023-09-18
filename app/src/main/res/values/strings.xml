@@ -5,4 +5,5 @@
     <string name="your_library">Your Library</string>
     <string name="spotify_premium">Spotify Premium</string>
     <string name="playing_music" translatable="false">Playing - Music</string>
+    <string name="music_picture" translatable="false">Music Picture</string>
 </resources>

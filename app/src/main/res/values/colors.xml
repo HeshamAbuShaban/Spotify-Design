@@ -22,5 +22,6 @@
     <color name="lightBackground">#404040</color>
 
     <color name="transparent">@android:color/transparent</color>
+    <color name="nice_gray">#303030</color>
 
 </resources>

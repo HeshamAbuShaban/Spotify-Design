@@ -1,8 +1,23 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <!-- Base application theme. -->
     <style name="Base.Theme.SpotifyDesign" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
         <item name="fontFamily">@font/cairo_medium</item>
+
+        <!--Imp-->
+        <item name="android:windowBackground">@color/night_window_background_color</item>
+        <item name="android:navigationBarColor">@color/night_window_background_color</item>
+        <!--Imp-->
+
+        <!--AppTStyle-->
+        <item name="android:textViewStyle">@style/AppTextViewStyle</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="AppTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

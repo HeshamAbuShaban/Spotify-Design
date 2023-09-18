@@ -1,7 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/calm_gray">
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_3sdp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--AppIcon-->
+    <ImageView
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_gravity="start|top"
+        android:contentDescription="@string/music_picture"
+        android:elevation="@dimen/_5sdp"
+        android:src="@drawable/ic_spotify"
+        tools:ignore="ImageContrastCheck" />
+
+    <!--ImageOverLay-->
+    <View
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_gravity="center|top"
+        android:background="@drawable/shape_image_overlay"
+        android:elevation="@dimen/_5sdp" />
+
+    <!--ImagePlace-->
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_160sdp"
+        android:layout_gravity="center|top"
+        android:contentDescription="@string/music_picture"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_ksi_"
+        tools:ignore="ImageContrastCheck" />
+
+    <!--ColorAroundTextContainer-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_135sdp"
+        android:orientation="vertical">
+
+        <!--SideStart-->
+        <View
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_gravity="start"
+            android:background="@color/smooth_red" />
+
+        <!--BottomSide-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_6sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:background="@color/smooth_red" />
+
+    </LinearLayout>
+
+    <!--MainTitle(MusicName)-->
+    <TextView
+        android:layout_width="@dimen/_140sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:background="@drawable/shape_text_odd_background"
+        android:elevation="@dimen/_10sdp"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp"
+        android:textStyle="bold"
+        tools:text="KSI Mix" />
+
+    <!--SubTitles-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|bottom"
+        android:layout_marginTop="@dimen/_160sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--FirstPart-->
+        <TextView
+            style="@style/MusicSubtitleText"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_9ssp"
+            tools:text="Playboi Carti, Tyler, The" />
+
+        <!--SecondPart-->
+        <TextView
+            style="@style/MusicSubtitleText"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginTop="@dimen/_1sdp"
+            android:textAlignment="textStart"
+            android:textSize="@dimen/_9ssp"
+            tools:text="Creator and KSI..." />
+
+
+    </LinearLayout>
+
+</FrameLayout>

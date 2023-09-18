@@ -1,28 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content">
 
     <View
-        android:layout_width="@dimen/_150sdp"
-        android:layout_height="@dimen/_160sdp"
-        android:layout_gravity="center|top" />
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_125sdp"
+        android:background="@drawable/shape_placeholder_items" />
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|start|top"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <View
-            android:layout_width="@dimen/_90sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_marginTop="@dimen/_160sdp" />
+            android:layout_width="@dimen/_86sdp"
+            android:layout_height="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/shape_placeholder_overlay_items" />
 
         <View
-            android:layout_width="@dimen/_90sdp"
-            android:layout_height="@dimen/_30sdp"
-            android:layout_gravity="center|bottom"
-            android:layout_marginTop="@dimen/_180sdp" />
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/shape_placeholder_overlay_items" />
 
     </LinearLayout>
 

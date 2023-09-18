@@ -28,5 +28,10 @@
         android:name="dev.training.spotify_design.ui.fragments.PremiumFragment"
         android:label="fragment_premium"
         tools:layout="@layout/fragment_premium" />
+    <fragment
+        android:id="@+id/playingFragment"
+        android:name="dev.training.spotify_design.ui.fragments.PlayingFragment"
+        android:label="fragment_playing"
+        tools:layout="@layout/fragment_playing" />
 
 </navigation>

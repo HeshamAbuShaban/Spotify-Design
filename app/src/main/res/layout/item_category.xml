@@ -1,44 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="@dimen/_200sdp"
+    android:layout_height="@dimen/_125sdp"
     android:layout_margin="@dimen/_3sdp">
 
-    <View
-        android:layout_width="@dimen/_200sdp"
-        android:layout_height="@dimen/_125sdp"
-        android:background="@drawable/shape_small_corner"
-        android:backgroundTint="#E6BA324F" />
-
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/viewBackColor"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center|start|top"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:background="#00796B">
 
-        <TextView
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/ivAlbumCover"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="end|center"
+            android:layout_marginEnd="-10dp"
+            android:background="@drawable/shape_small_corner"
+            android:contentDescription="@string/picture_of_the_type_of_music_that_the_category_has"
+            android:rotation="-45"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover_ksi_"
+            app:roundPercent="35"
+            tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:textAlignment="viewStart"
-            android:textSize="@dimen/_13ssp"
-            android:textStyle="bold"
-            tools:text="@string/spotify_premium" />
+            android:layout_gravity="center|start|top"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="-13dp"
-            android:layout_marginTop="@dimen/_1sdp"
-            android:textAlignment="viewStart"
-            android:textSize="@dimen/_10ssp"
-            android:textStyle="bold"
-            tools:text="@string/spotify_premium" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold"
+                tools:text="@string/spotify_premium" />
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="-13dp"
+                android:layout_marginTop="@dimen/_1sdp"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                tools:text="@string/spotify_premium" />
 
-</FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</com.google.android.material.card.MaterialCardView>

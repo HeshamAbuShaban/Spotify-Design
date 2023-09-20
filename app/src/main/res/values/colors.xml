@@ -5,7 +5,12 @@
 
     <!--Customs-->
     <color name="night_window_background_color">#121212</color>
+
+    <!--Ch-->
     <color name="smooth_red">#BA324F</color>
+    <color name="smooth_yellow">#E6B43C</color>
+    <color name="smooth_green">#2DA037</color>
+    <color name="smooth_blue">#1E6ECD</color>
 
     <color name="grayBackground">#303030</color>
 

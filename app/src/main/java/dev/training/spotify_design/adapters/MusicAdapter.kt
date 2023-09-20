@@ -13,7 +13,21 @@ class MusicAdapter : RecyclerView.Adapter<MusicAdapter.MusicViewHolder>() {
         RecyclerView.ViewHolder(binding.root) {
         fun bindData(music: Music) {
             with(binding) {
-                root.background
+
+                ivMusicCover.setImageResource(music.img)
+                tvMusicTitle.text = music.title
+
+                if (music.subtitle.length > 25) {
+                    val partOne = music.subtitle.substring(0, 25)
+                    val partTwo = music.subtitle.substring(25, music.subtitle.length)
+                    // set them
+                    tvSubtitleP1.text = partOne
+                    tvSubtitleP2.text = partTwo
+                } else {
+                    //.. normal set to first tv
+                    tvSubtitleP1.text = music.subtitle
+                }
+
             }
         }
     }
@@ -31,7 +45,7 @@ class MusicAdapter : RecyclerView.Adapter<MusicAdapter.MusicViewHolder>() {
 
     }
 
-    private var musics: MutableList<Music>
+    var musics: List<Music>
         get() = musicDiffer.currentList
         set(value) {
             musicDiffer.submitList(value)

@@ -13,7 +13,10 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>
         RecyclerView.ViewHolder(binding.root) {
         fun bindData(category: Category) {
             with(binding) {
-                root.background
+                viewBackColor.setBackgroundResource(category.imgBacColor)
+                ivAlbumCover.setImageResource(category.img)
+                tvTitle.text = category.title
+                tvSubtitle.text = category.subtitle
             }
         }
     }
@@ -32,7 +35,7 @@ class CategoryAdapter : RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>
 
     }
 
-    private var categories: MutableList<Category>
+    var categories: List<Category>
         get() = categoryDiffer.currentList
         set(value) {
             categoryDiffer.submitList(value)

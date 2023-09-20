@@ -6,4 +6,5 @@
     <string name="spotify_premium">Spotify Premium</string>
     <string name="playing_music" translatable="false">Playing - Music</string>
     <string name="music_picture" translatable="false">Music Picture</string>
+    <string name="picture_of_the_type_of_music_that_the_category_has" translatable="false">picture of the type of music that the category has</string>
 </resources>
